@@ -1,0 +1,32 @@
+.Card {
+  width: 13rem;
+  height: 13rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: 5px 7px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  background: #fff;
+  transition: 0.1s ease-in;
+}
+
+.Card:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Card i {
+  margin: 1rem 0;
+  color: rgb(37, 166, 218);
+}
+
+.Card strong,
+.Card p {
+  margin: 0.5rem 0;
+}
