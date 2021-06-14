@@ -49,4 +49,8 @@
   .FeaturesCards {
     grid-template-columns: 1fr;
   }
+
+  .Features {
+    margin-top: 10rem;
+  }
 }

@@ -9,6 +9,10 @@
   font-family: sans-serif;
 }
 
+#MenuIcon {
+  display: none;
+}
+
 .Menu {
   width: 60%;
   display: flex;
@@ -38,8 +42,25 @@
 }
 
 @media (max-width: 425px) {
-  h1,
+  .Header {
+    padding: 0 5%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  #MenuIcon {
+    display: block;
+  }
+
   .Menu {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 3rem;
+    background: rgb(87, 107, 112);
+    padding: 1rem;
   }
 }
