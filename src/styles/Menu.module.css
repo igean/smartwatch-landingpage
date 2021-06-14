@@ -1,0 +1,48 @@
+#MenuIcon {
+  display: none;
+}
+
+.Menu {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+.Menu button {
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background: rgb(18, 166, 192);
+  color: #fff;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+}
+
+.Menu button:hover {
+  background: rgb(15, 142, 165);
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  #MenuIcon {
+    display: block;
+    position: absolute;
+  }
+
+  .Menu {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 3rem;
+    background: rgb(87, 107, 112);
+    padding: 1rem;
+  }
+}
