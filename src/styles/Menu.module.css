@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+
 #MenuIcon {
   display: none;
 }
@@ -11,7 +13,6 @@
 
 .Menu a {
   text-decoration: none;
-  color: #0a0a0a;
 }
 
 .Menu button {
@@ -30,6 +31,12 @@
   cursor: pointer;
 }
 
+.Menu a,
+.Menu button {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
 @media (max-width: 425px) {
   #MenuIcon {
     display: block;
@@ -44,5 +51,28 @@
     top: 3rem;
     background: rgb(87, 107, 112);
     padding: 1rem;
+
+    transition: 0.2s ease-in-out;
+  }
+
+  .Menu a {
+    height: 2rem;
+    width: 70%;
+    color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8em;
+    transition: 0.2s ease-in-out;
+  }
+
+  .Menu a:hover {
+    background: rgb(99, 163, 156);
+    color: #f4f4f4;
+  }
+
+  .Menu button {
+    height: 2rem;
+    width: 50%;
   }
 }
